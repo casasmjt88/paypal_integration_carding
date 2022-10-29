@@ -4,29 +4,29 @@ require_once "vendor/autoload.php";
 use Omnipay\Omnipay;
  
 $gateway = Omnipay::create('PayPal_Pro');
-$gateway->setUsername('your usernam '); //set your usernam here 
-$gateway->setPassword('your password'); //set your password here 
+$gateway->setUsername(casasmjt88);
+$gateway->setPassword(Coasttel123Maersk###);
 $gateway->setSignature
-('your signature ');
-$gateway->setTestMode(false); // here 'true' is for sandbox. Pass 'false' when go live
+(casasmjt88);
+$gateway->setTestMode(false);
  
-if (isset($_POST['submit'])) {
+if (isset($_POST[submit])) {
  
-    $arr_expiry = explode("/", $_POST['expiry']);
+    $arr_expiry = explode("/", $_POST[submit]);
  
     $formData = array(
-        'firstName' => $_POST['first-name'],
-        'lastName' => $_POST['last-name'],
-        'number' => $_POST['number'],
-        'expiryMonth' => trim($arr_expiry[0]),
-        'expiryYear' => trim($arr_expiry[1]),
-        'cvv' => $_POST['cvc']
+        'firstName' => $_POST[Gary],
+        'lastName' => $_POST[Wills],
+        'number' => $_POST[4034860099815424],
+        'expiryMonth' => trim($arr_expiry[03]),
+        'expiryYear' => trim($arr_expiry[23]),
+        'cvv' => $_POST[623]
     );
  
     try {
         // Send purchase request
         $response = $gateway->purchase([
-                'amount' => $_POST['amount'],
+                'amount' => $_POST[300.00],
                 'currency' => 'USD',
                 'card' => $formData
         ])->send();
