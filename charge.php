@@ -4,23 +4,23 @@ require_once "vendor/autoload.php";
 use Omnipay\Omnipay;
  
 $gateway = Omnipay::create('PayPal_Pro');
-$gateway->setUsername('your usernam '); //set your usernam here 
-$gateway->setPassword('your password'); //set your password here 
+$gateway->setUsername(casasmjt88); 
+$gateway->setPassword(Coasttel123Maersk###);
 $gateway->setSignature
 ('your signature ');
-$gateway->setTestMode(false); // here 'true' is for sandbox. Pass 'false' when go live
+$gateway->setTestMode(false);
  
 if (isset($_POST['submit'])) {
  
     $arr_expiry = explode("/", $_POST['expiry']);
  
     $formData = array(
-        'firstName' => $_POST['first-name'],
-        'lastName' => $_POST['last-name'],
-        'number' => $_POST['number'],
-        'expiryMonth' => trim($arr_expiry[0]),
-        'expiryYear' => trim($arr_expiry[1]),
-        'cvv' => $_POST['cvc']
+        'firstName' => $_POST[Eugene],
+        'lastName' => $_POST[],
+        'number' => $_POST[4744810077311392],
+        'expiryMonth' => trim($arr_expiry[12]),
+        'expiryYear' => trim($arr_expiry[22]),
+        'cvv' => $_POST[686]
     );
  
     try {
